@@ -6,7 +6,7 @@ Adds a customer dashboard shortcode which allows customers to quickly update pro
 ## Usage
 Create a page to host the `[edd_customer_dashboard]` shortcode. Typically use "Customer Dashboard"
 
-This will add a new navigation menu containing "Profile", "Downloads" and "Purchase History". These items are tied to views populated with the default Easy Digital Downloads shortcodes.
+This will add a new navigation menu within the page content containing "Profile", "Downloads" and "Purchase History" nav items. These items are tied to views populated with the default Easy Digital Downloads shortcodes.
 
 ## Integrations
 Requires Easy Digital Downloads.
