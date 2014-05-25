@@ -1,7 +1,3 @@
 .DS_Store
 node_modules
-<<<<<<< HEAD
 .sass-cache
-=======
-.sass-cache
->>>>>>> FETCH_HEAD
