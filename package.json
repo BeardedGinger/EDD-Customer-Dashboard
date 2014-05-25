@@ -1,0 +1,12 @@
+{
+  "name": "edd-customer-dashboard",
+  "version": "1.0.0",
+  "dependencies": {
+  	"load-grunt-tasks": "~0.4.0"
+  },
+  "devDependencies": {
+  	"grunt": "^0.4.4",
+  	"grunt-contrib-compass": "~0.7.0",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}

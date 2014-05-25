@@ -110,7 +110,7 @@ class EDD_Customer_Dashboard {
 	 * @since    1.0.0
 	 */
 	public function enqueue_styles() {
-		wp_enqueue_style( $this->plugin_slug . '-plugin-styles', plugins_url( 'assets/style.css', __FILE__ ), array(), self::VERSION );
+		wp_enqueue_style( $this->plugin_slug . '-plugin-styles', plugins_url( 'style.css', __FILE__ ), array(), self::VERSION );
 	}
 
 	/**
@@ -214,22 +214,27 @@ class EDD_Customer_Dashboard {
 		switch ( $task ) {
 
 			case 'profile' :
+				echo '<h2>' . __( 'Profile','edd_customer_dashboard') . '</h2>';
 				echo do_shortcode( '[edd_profile_editor]' );
 			break;
 
 			case 'purchases' :
+				echo '<h2>' . __( 'Purchase History', 'edd_customer_dashboard' ) . '</h2>';
 				echo do_shortcode( '[purchase_history]' );
 			break;
 
 			case 'download' :
+				echo '<h2>' . __( 'Download History', 'edd_customer_dashboard' ) . '</h2>';
 				echo do_shortcode( '[download_history]' );
 			break;
 
 			case 'wishlist' :
+				echo '<h2>' . __( 'Wishlists', 'edd_customer_dashboard' ) . '</h2>';
 				echo do_shortcode( '[edd_wish_lists]' );
 			break;
 
 			case 'fes_become_vendor' :
+				echo '<h2>' . __( 'Become a Vendor', 'edd_customer_dashboard' ) . '</h2>';
 				echo do_shortcode( '[fes_registration_form]' );
 			break;
 

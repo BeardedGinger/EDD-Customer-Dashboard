@@ -1,0 +1,21 @@
+.customer-dashboard-menu {
+
+	float: left;
+	margin-bottom: 15px;
+	width: 100%;
+
+	.menu {
+		list-style: none;
+
+		li {
+			float: left;
+			margin-right: 10px;
+			width: auto;
+
+			a {
+				padding: 5px 10px;
+			}
+		}
+	}
+
+}
