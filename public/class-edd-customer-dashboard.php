@@ -185,7 +185,7 @@ class EDD_Customer_Dashboard {
 				'name' => __( 'Become a Vendor', 'edd_customer_dashboard' )
 			);
 		}
-		
+
 		// Support for EDD Wishlists
 		if( class_exists( 'EDD_Wish_Lists' ) ) {
 			$menu[ 'wishlists' ] = array(
