@@ -17,9 +17,8 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-if( class_exists( 'Easy_Digital_Downloads' ) ) {
+
 
  	require_once( plugin_dir_path( __FILE__ ) . 'public/class-edd-customer-dashboard.php' );
 	add_action( 'plugins_loaded', array( 'EDD_Customer_Dashboard', 'get_instance' ) );
 
-}
