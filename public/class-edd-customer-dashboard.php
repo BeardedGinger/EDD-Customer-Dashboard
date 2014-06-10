@@ -178,14 +178,6 @@ class EDD_Customer_Dashboard {
 			'name' => __( 'Downloads', 'edd_customer_dashboard' )
 		);
 
-		// Support for EDD Front-End Submissions
-		if( class_exists( 'EDD_Front_End_Submissions' ) && !current_user_can( 'edit_products' ) ) {
-			$menu[ 'become_vendor' ] = array(
-				'task' => 'become_vendor',
-				'name' => __( 'Become a Vendor', 'edd_customer_dashboard' )
-			);
-		}
-
 		// Support for EDD Wishlists
 		if( class_exists( 'EDD_Wish_Lists' ) ) {
 			$menu[ 'wishlists' ] = array(

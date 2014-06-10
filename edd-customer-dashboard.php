@@ -3,7 +3,7 @@
  * Plugin Name:       EDD Customer Dashboard
  * Plugin URI:        http://joshmallard.com
  * Description:       Adds a customer dashboard shortcode which allows customers to quickly edit their profile and view purchase history and download history. Also integrates with the Front-End Submissions and Wishlists plugins.
- * Version:           1.0.2
+ * Version:           1.0.3
  * Author:            Josh Mallard
  * Author URI:        http://joshmallard.com
  * Text Domain:       edd_customer_dashboard
