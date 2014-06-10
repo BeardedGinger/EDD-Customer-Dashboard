@@ -145,7 +145,7 @@ class EDD_Customer_Dashboard {
 
 			<?php
 		} else {
-			echo do_shortcode( '[edd_login]' );
+			echo edd_login_form( get_permalink() );
 		}
 
 		$dashboard = ob_get_clean();
