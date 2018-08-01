@@ -202,41 +202,48 @@ class EDD_Customer_Dashboard {
 		ob_start();
 
 		$custom = apply_filters('edd_cd_custom_task', false, $task );
-		switch ( $task ) {
 
-			case 'profile' :
-				echo '<h2>' . __( 'Profile','edd_customer_dashboard') . '</h2>';
-				echo do_shortcode( '[edd_profile_editor]' );
-			break;
+		if( empty( $task )){
+			echo '<h2>' . __( 'Profile','edd_customer_dashboard') . '</h2>';
+			echo do_shortcode( '[edd_profile_editor]' );
+		}
+		else{
+			switch ( $task ) {
 
-			case 'purchases' :
-				echo '<h2>' . __( 'Purchase History', 'edd_customer_dashboard' ) . '</h2>';
-				echo do_shortcode( '[purchase_history]' );
-			break;
+				case 'profile' :
+					echo '<h2>' . __( 'Profile','edd_customer_dashboard') . '</h2>';
+					echo do_shortcode( '[edd_profile_editor]' );
+					break;
 
-			case 'download' :
-				echo '<h2>' . __( 'Download History', 'edd_customer_dashboard' ) . '</h2>';
-				echo do_shortcode( '[download_history]' );
-			break;
+				case 'purchases' :
+					echo '<h2>' . __( 'Purchase History', 'edd_customer_dashboard' ) . '</h2>';
+					echo do_shortcode( '[purchase_history]' );
+					break;
 
-			case 'wishlist' :
-				echo '<h2>' . __( 'Wishlists', 'edd_customer_dashboard' ) . '</h2>';
-				echo do_shortcode( '[edd_wish_lists]' );
-			break;
+				case 'download' :
+					echo '<h2>' . __( 'Download History', 'edd_customer_dashboard' ) . '</h2>';
+					echo do_shortcode( '[download_history]' );
+					break;
 
-			case 'fes_become_vendor' :
-				echo '<h2>' . __( 'Become a Vendor', 'edd_customer_dashboard' ) . '</h2>';
-				echo do_shortcode( '[fes_registration_form]' );
-			break;
+				case 'wishlist' :
+					echo '<h2>' . __( 'Wishlists', 'edd_customer_dashboard' ) . '</h2>';
+					echo do_shortcode( '[edd_wish_lists]' );
+					break;
 
-			case $custom :
-				do_action( 'edd_cd_custom_task_content' );
-			break;
+				case 'fes_become_vendor' :
+					echo '<h2>' . __( 'Become a Vendor', 'edd_customer_dashboard' ) . '</h2>';
+					echo do_shortcode( '[fes_registration_form]' );
+					break;
 
-			default :
+				case $custom :
+					do_action( 'edd_cd_custom_task_content' );
+					break;
 
-			break;
+				default :
 
+					break;
+
+			}
 		}
 
 		$dashboard_content = ob_get_clean();
